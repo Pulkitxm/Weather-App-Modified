@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.sgscuba.com.sg%2Fwp-content%2Fuploads%2F2015%2F10%2Fwind-map.jpg&f=1&nofb=1&ipt=0cf161c662fa7f8439686caedf3ffaca4ff10b3b48d73ce617e3e085ac1947ee&ipo=images') no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+#center_col{
+    margin: auto;
+}
+.navigation {
+    height: 90px;
+    background-color: rgb(56, 56, 165);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    height: 90px;
+    background-color: rgb(214, 214, 250);
+}
+
+.footer {
+    height: 90px;
+    background-color: rgb(89, 89, 203);
+}
+
+.nav-left {
+    display: flex;
+    font-size: 30px;
+}
+
+.nav-left ul {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.bar_links ul li ::after{
+    content: '';
+    width: 0%;          /* for hidden lines */
+    height: 1.5px;
+    background: #000;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+.bar_links ul li :hover::after{
+    width: 100%;
+}
+
+.data-bar {
+    display: flex;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    position: sticky;
+    top: 0;
+    background-color: rgb(214, 214, 250);
+}
+
+.data-bar ul {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 0px;
+
+}
+
+.data-bar ul li {
+    list-style: none; 
+    margin: 0 20px;
+    
+}
+
+.data-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading{
+    color: white;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left{
+    width: 43vw;
+    /* height: 150vh; */
+    display: flex;
+    background-color: blue;
+}
+
+.content-right{
+    width: 25vw;
+    display: flex;
+    background-color: green;
+}
+
+
+

@@ -1,0 +1,33 @@
+:root {
+    --main-bg-color: brown;
+}
+
+.max-width-content {
+    max-width: 70vw;
+}
+
+.max-width-bar {
+    max-width: 100vw;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.form-input {
+    padding: 4px 4px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 0px 0px;
+    
+}
+
+.btn {
+    padding: 4px 4px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 0px -8px;
+    cursor: pointer;
+}
