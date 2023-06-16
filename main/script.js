@@ -23,7 +23,7 @@ const getWeather = (city) => {
             sunrise.innerHTML = response.sunrise
             sunset.innerHTML = response.sunset
             temp.innerHTML = response.temp
-            temp1.innerHTML = response.temp
+            // temp1.innerHTML = response.temp
             wind_degrees.innerHTML = response.wind_degrees
             wind_speed.innerHTML = response.wind_speed
             wind_speed1.innerHTML = response.wind_speed
@@ -31,8 +31,17 @@ const getWeather = (city) => {
         .catch((err) => console.error(err));
 }
 
+var currentUrl = document.referrer;
+var c = "?city=";
 
-getWeather("Agra")
+var index = currentUrl.indexOf(c);
+console.log(currentUrl.substring(index + 6));
+var city = "Delhi";
+if (index !== -1) {
+    city = currentUrl.substring(index + 6);
+}
+console.log(city);
+getWeather(city)
 
 
 // document.onkeydown = function (e) {
