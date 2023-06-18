@@ -14,19 +14,34 @@ const getWeather = (city) => {
         .then((response) => {
 
             console.log(response)
-            cloud_pct.innerHTML = response.cloud_pct
-            feels_like.innerHTML = response.feels_like
-            humidity.innerHTML = response.humidity
-            // humidity1.innerHTML = response.humidity
-            max_temp.innerHTML = response.max_temp
-            min_temp.innerHTML = response.min_temp
-            sunrise.innerHTML = response.sunrise
-            sunset.innerHTML = response.sunset
-            temp.innerHTML = response.temp
-            // temp1.innerHTML = response.temp
-            wind_degrees.innerHTML = response.wind_degrees
-            wind_speed.innerHTML = response.wind_speed
-            wind_speed1.innerHTML = response.wind_speed
+
+            if (response.cloud_pct == undefined ||
+                response.feels_like == undefined ||
+                response.humidity == undefined ||
+                response.max_temp == undefined ||
+                response.min_temp == undefined ||
+                response.sunrise == undefined ||
+                response.sunset == undefined ||
+                response.temp == undefined ||
+                response.wind_degrees == undefined ||
+                response.wind_speed == undefined ||
+                response.wind_speed == undefined
+            ) alert("Data not found")
+            else{    
+                cloud_pct.innerHTML = response.cloud_pct
+                feels_like.innerHTML = response.feels_like
+                humidity.innerHTML = response.humidity
+                // humidity1.innerHTML = response.humidity
+                max_temp.innerHTML = response.max_temp
+                min_temp.innerHTML = response.min_temp
+                sunrise.innerHTML = response.sunrise
+                sunset.innerHTML = response.sunset
+                temp.innerHTML = response.temp
+                // temp1.innerHTML = response.temp
+                wind_degrees.innerHTML = response.wind_degrees
+                wind_speed.innerHTML = response.wind_speed
+                wind_speed1.innerHTML = response.wind_speed
+            }
         })
         .catch((err) => console.error(err));
 }
